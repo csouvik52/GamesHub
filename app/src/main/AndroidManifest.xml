@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abc.gameshub">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gameshubicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Arena"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ColourGameL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ColourGameL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ColourGameL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SlideGameL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SlideGameL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SlideGameL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpinTheBottle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TicTacToe"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CrossWordsL1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CrossWordsL2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CrossWordsL3"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".QuizL1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".QuizL2" />
+        <activity android:name=".QuizL3" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
